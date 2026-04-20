@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCU$ - Préstamos Personales y Comerciales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#inicio" style="text-decoration:none;"><img src="img/logoencus2.png" alt="Logo ENCU$" style="height: 110px;"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#formularios">Formularios</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <section id="hero">
+            <div class="hero-content">
+                <img src="img/logoencus2.png" alt="Logo ENCU$" style="height: 340px; display: block; margin: 0 auto 2rem auto;">
+                <h3>Tu Socio Financiero de Confianza</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit delectus ullam adipisci fuga at, molestiae maiores recusandae. Illo, repellat est inventore adipisci labore aliquam possimus, eligendi natus explicabo pariatur accusamus..</p>
+                <button class="cta-button" onclick="document.getElementById('formularios').scrollIntoView({behavior: 'smooth'});">SOLICITA TU PRÉSTAMO</button>
+            </div>
+        </section>
+
+        <section id="formularios" class="form-section">
+            <div class="form-container">
+                <div class="form-left">
+                    <h2>¡Consultanos!</h2>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <input type="text" name="nombre" placeholder="Nombre" required>
+                            <input type="text" name="apellido" placeholder="Apellido" required>
+                        </div>
+                        <input type="text" name="dni" placeholder="DNI" required>
+                        <input type="text" name="celular" placeholder="Celular" required>
+                        <div class="form-row-radio">
+                            <label><input type="radio" name="tipo" value="Empleado" required> Empleado</label>
+                            <label><input type="radio" name="tipo" value="Jubilado o Pensionado"> Jubilado o Pensionado</label>
+                            <label><input type="radio" name="tipo" value="Monotributista"> Monotributista</label>
+                            <label><input type="radio" name="tipo" value="Responsable Inscripto"> Responsable Inscripto</label>
+                            <label><input type="radio" name="tipo" value="Pyme"> Pyme</label>
+                        </div>
+                        <select name="provincia" required>
+                            <option value="" disabled selected>Provincia</option>
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="Catamarca">Catamarca</option>
+                            <option value="Chaco">Chaco</option>
+                            <option value="Chubut">Chubut</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Corrientes">Corrientes</option>
+                            <option value="Entre Ríos">Entre Ríos</option>
+                            <option value="Formosa">Formosa</option>
+                            <option value="Jujuy">Jujuy</option>
+                            <option value="La Pampa">La Pampa</option>
+                            <option value="La Rioja">La Rioja</option>
+                            <option value="Mendoza">Mendoza</option>
+                            <option value="Misiones">Misiones</option>
+                            <option value="Neuquén">Neuquén</option>
+                            <option value="Río Negro">Río Negro</option>
+                            <option value="Salta">Salta</option>
+                            <option value="San Juan">San Juan</option>
+                            <option value="San Luis">San Luis</option>
+                            <option value="Santa Cruz">Santa Cruz</option>
+                            <option value="Santa Fe">Santa Fe</option>
+                            <option value="Santiago del Estero">Santiago del Estero</option>
+                            <option value="Tierra del Fuego">Tierra del Fuego</option>
+                            <option value="Tucumán">Tucumán</option>
+                        </select>
+                        <select name="conociste" required>
+                            <option value="" disabled selected>¿Cómo nos conociste?</option>
+                            <option value="Redes Sociales">Redes Sociales</option>
+                            <option value="Recomendación">Recomendación</option>
+                            <option value="Publicidad">Publicidad</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                        <textarea name="observaciones" placeholder="Observaciones, preguntas y/o comentarios."></textarea>
+                        <button type="submit" class="form-submit">Enviar Consulta</button>
+                        <div id="form-message"></div>
+                    </form>
+                </div>
+                <div class="form-right">
+                    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=facearea&w=500&q=80" alt="Persona llenando formulario" />
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios-dos-columnas">
+                <div class="servicio-columna">
+                    <h3>Personales</h3>
+                    <div class="servicio-iconos">
+                        <div class="servicio-item">
+                            <i class="fas fa-handshake"></i>
+                            <span class="servicio-label">PRÉSTAMOS PERSONALES</span>
+                        </div>
+                        <div class="servicio-item">
+                            <i class="fas fa-car"></i>
+                            <span class="servicio-label">PRÉSTAMOS CON GARANTÍA PRENDARIA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicio-columna">
+                    <h3>Comerciales</h3>
+                    <div class="servicio-iconos">
+                        <div class="servicio-item">
+                            <i class="fas fa-money-check-alt"></i>
+                            <span class="servicio-label">COMPRA DE CHEQUES</span>
+                        </div>
+                        <div class="servicio-item">
+                            <i class="fas fa-store"></i>
+                            <span class="servicio-label">PRÉSTAMOS COMERCIALES</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="contacto-container">
+                <div class="contacto-info">
+                    <h2 class="contacto-titulo">Contacto</h2>
+                    <div class="contacto-redes">
+                        <a href="https://wa.me/5491123456789" target="_blank" class="btn-red-social whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://facebook.com/encu$" target="_blank" class="btn-red-social facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/encu$" target="_blank" class="btn-red-social instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <h3 class="ubicacion-titulo">¿Dónde estamos ubicados?</h3>
+                    <div class="contacto-mapa">
+                        <iframe src="https://www.google.com/maps?q=-36.618889,-64.291944&z=18&output=embed" width="100%" height="300" style="border:0; border-radius:12px; margin-top:1.5rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><span class="footer-blanco">Todos los Derechos Reservados</span> <span class="footer-naranja">©2024 ENCU$</span></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
